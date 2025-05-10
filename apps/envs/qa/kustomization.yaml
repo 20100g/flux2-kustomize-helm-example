@@ -4,5 +4,5 @@ namespace: podinfo-qa
 resources:
   - namespace.yaml
   - ../../base/podinfo
-patches:
-  - path: podinfo-values.yaml
+patchesStrategicMerge:
+  - podinfo-values.yaml

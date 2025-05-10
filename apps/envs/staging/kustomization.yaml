@@ -4,5 +4,5 @@ namespace: podinfo-staging
 resources:
   - ../../base/podinfo
   - namespace.yaml
-patches:
-  - path: podinfo-values.yaml
+patchesStrategicMerge:
+  - podinfo-values.yaml
