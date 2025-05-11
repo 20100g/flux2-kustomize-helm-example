@@ -6,3 +6,6 @@ resources:
   - ../base/podinfo
 patches:
   - path: podinfo-values.yaml
+    target:
+      kind: HelmRelease
+      name: podinfo
